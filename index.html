@@ -1,0 +1,104 @@
+<!doctype html>
+<html lang="ko"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><meta name="color-scheme" content="light"><meta name="referrer" content="no-referrer"><title>사회성발달및훈련 · 부모 컨설팅 신청서</title>
+<script>
+// 운영자 설정: Google Apps Script 웹 앱 배포 후 발급되는 /exec URL을 붙여넣으세요.
+// 함께 제공한 Code.gs를 배포해야 아래 폼과 응답 형식이 일치합니다.
+const GOOGLE_SCRIPT_ENDPOINT = "";
+</script>
+<style>
+:root{--ink:#203c37;--green:#236957;--line:#dce5df;--muted:#61716b}*{box-sizing:border-box}body{margin:0;background:#f4f6f2;color:var(--ink);font-family:system-ui,-apple-system,"Apple SD Gothic Neo","Malgun Gothic",sans-serif;line-height:1.7}main{max-width:820px;margin:0 auto;padding:52px 20px 64px}.eyebrow{font-size:13px;letter-spacing:.04em;color:var(--green);font-weight:700}h1{font-size:clamp(27px,5vw,38px);line-height:1.35;letter-spacing:-.055em;margin:14px 0 20px}header p{color:var(--muted);margin:0 0 18px}.tags{display:flex;gap:8px;flex-wrap:wrap}.tags b{background:#e5eee7;border-radius:30px;font-size:13px;padding:5px 13px;font-weight:600}.intro{margin:24px 0;font-size:13px;color:var(--muted)}section{padding:28px;background:white;border:1px solid var(--line);border-radius:18px;margin-bottom:18px}h2{font-size:20px;letter-spacing:-.03em;margin:0 0 22px}h2 em{font-style:normal;color:#548773;font-size:13px;margin-right:10px}.grid{display:grid;grid-template-columns:1fr 1fr;gap:18px}.field{margin-bottom:18px}.grid .field{margin-bottom:0}label,legend{font-size:14px;font-weight:650}label{display:block;margin-bottom:7px}label span{color:var(--green);font-size:11px;margin-left:5px}small{font-weight:400;color:var(--muted);font-size:12px}input,select,textarea{font:inherit;font-size:16px;width:100%;padding:12px;border:1px solid #cbd8d0;border-radius:9px;color:var(--ink);background:#fff}textarea{resize:vertical;min-height:105px}input:focus,select:focus,textarea:focus{outline:3px solid #d5e9de;border-color:var(--green)}input[readonly],input:disabled{background:#f3f5f2}input::placeholder,textarea::placeholder{color:#87918a;font-size:14px}.hint{font-size:13px;color:var(--muted);margin:7px 0 0}.schedule{display:grid;grid-template-columns:80px 125px 1fr;gap:12px;align-items:end;padding:15px 0;border-top:1px solid #edf0eb}.schedule>strong{align-self:center;font-size:15px}.schedule label{font-size:12px;color:var(--muted)}.schedule select,.schedule input{padding:10px}.consent{padding:16px;background:#f5f8f4;border-radius:10px;margin-bottom:14px}.consent p{font-size:14px;margin:0 0 12px;color:var(--muted)}.check{display:flex;gap:10px;align-items:flex-start;margin:0}.check input{width:19px;height:19px;margin-top:4px;flex-shrink:0;accent-color:var(--green)}button{width:100%;padding:17px;border:0;border-radius:11px;background:var(--green);color:white;font-size:17px;font-weight:700;cursor:pointer}button:hover{background:#185541}button:focus-visible{outline:3px solid #9dc2ad;outline-offset:4px}button:disabled{opacity:.6;cursor:wait}#status{margin-top:16px;border-radius:10px;padding:16px;background:#e8f2eb}#status:empty{display:none}#status[data-kind="error"]{background:#fff0ea;color:#9a3e22}footer{text-align:center;font-size:12px;color:var(--muted);margin-top:24px}fieldset{border:0;padding:0;margin:0;min-width:0}noscript{display:block;padding:20px;color:#943b24}@media(max-width:560px){main{padding:30px 14px 40px}section{padding:21px 17px;border-radius:14px}.grid{grid-template-columns:1fr;gap:18px}.schedule{grid-template-columns:65px 1fr}.schedule .time{grid-column:1/-1}h2{font-size:18px}}
+</style></head><body><main>
+<header><div class="eyebrow">한국외국어대학교 교육대학원 · 상담심리전공</div><h1>사회성발달및훈련<br>부모 컨설팅 신청서</h1><p>자녀의 사회성을 이해하고,<br>우리 아이에게 필요한 지원 방향을 함께 찾아갑니다.</p><div class="tags"><b>만 3~18세</b><b>온라인 진행</b><b>참가비 무료</b></div></header>
+<p class="intro">신경발달장애 아동·청소년의 부모님을 위한 프로그램입니다. 대학원생의 부모 면담 및 검사 결과 검토·해석과 담당 교수의 컨설팅을 바탕으로 피드백을 제공합니다. <strong>필수</strong> 표시가 있는 항목을 작성해 주세요.</p>
+<noscript>신청하려면 브라우저에서 JavaScript를 활성화해 주세요.</noscript>
+<form id="application"><fieldset id="formFields"><section><h2><em>01</em>보호자 정보</h2><div class="grid">
+<div class="field"><label for="guardianName">보호자 이름 <span>필수</span></label><input id="guardianName" name="guardianName" type="text" required autocomplete="name" maxlength="80"></div><div class="field"><label for="phone">연락처 <span>필수</span></label><input id="phone" name="phone" type="tel" required autocomplete="tel" maxlength="30" placeholder="010-1234-5678"></div><div class="field"><label for="email">이메일 <span>필수</span></label><input id="email" name="email" type="email" required autocomplete="email" maxlength="254"></div></div></section><section><h2><em>02</em>자녀 정보</h2><div class="grid"><div class="field"><label for="childName">아이 이름 <span>필수</span></label><input id="childName" name="childName" type="text" required maxlength="80"></div><div class="field"><label for="birthDate">생년월일 <span>필수</span></label><input id="birthDate" name="birthDate" type="date" required ></div><div class="field"><label for="age">만 나이 <span>필수</span></label><input id="age" name="age" type="number" required readonly min="3" max="18"><p class=hint>생년월일을 입력하면 자동으로 계산됩니다.</p></div><div class="field"><label for="gender">성별 <span>필수</span></label><select id="gender" name="gender" required><option value="">선택해 주세요</option><option>남</option><option>여</option><option>기타 / 응답하지 않음</option></select></div></div></section><section><h2><em>03</em>진단 정보</h2><div class="grid"><div class="field"><label for="diagnosis">진단명 <span>필수</span></label><input id="diagnosis" name="diagnosis" type="text" required maxlength="300" placeholder="예: 자폐스펙트럼장애(ASD), ADHD"></div><div class="field"><label for="diagnosisDate">진단 시기 <span>필수</span></label><input id="diagnosisDate" name="diagnosisDate" type="text" required maxlength="300" placeholder="예: 2024년 3월 / 만 7세경"></div></div><div style="margin-top:18px"><div class="field"><label for="multipleDiagnoses">복수진단이 있다면 알려주세요 <small>선택</small></label><textarea id="multipleDiagnoses" name="multipleDiagnoses" rows="4" maxlength="3000"  placeholder="각 진단명과 진단 시기를 적어주세요."></textarea></div></div></section><section><h2><em>04</em>사회성 관련 고민</h2><div class="field"><label for="concern">현재 가장 고민하는 사회성 문제 <span>필수</span></label><textarea id="concern" name="concern" rows="4" maxlength="3000" required placeholder="예: 친구에게 먼저 다가가기 어렵거나, 또래와 갈등이 자주 생겨요."></textarea></div><div class="field"><label for="situations">어떤 상황에서 주로 나타나나요? <small>선택</small></label><textarea id="situations" name="situations" rows="4" maxlength="3000"  placeholder="예: 학교, 유치원, 학원, 친구와의 놀이 상황 등"></textarea></div><div class="field"><label for="expectations">컨설팅에서 도움받고 싶은 점 <small>선택</small></label><textarea id="expectations" name="expectations" rows="4" maxlength="3000"  placeholder="궁금한 점이나 기대하는 도움을 자유롭게 적어주세요."></textarea></div></section><section><h2><em>05</em>온라인 상담 가능 시간</h2><p class="hint" style="margin-bottom:16px">각 요일의 가능 여부를 모두 선택해 주세요. 가능한 요일에는 시간대를 직접 입력해 주세요. 시간은 한국 시간 기준이며, 최종 일정은 개별 조율합니다.</p><div class="schedule"><strong>월요일</strong><div><label for="monAvailable">가능 여부 · 필수</label><select id="monAvailable" name="monAvailable" required data-day="mon"><option value="">선택</option><option value="yes">가능</option><option value="no">불가능</option></select></div><div class="time"><label for="monTime">월요일 가능 시간대</label><input id="monTime" name="monTime" maxlength="300" disabled placeholder="예: 오전 10~12시, 오후 7시 이후"></div></div><div class="schedule"><strong>화요일</strong><div><label for="tueAvailable">가능 여부 · 필수</label><select id="tueAvailable" name="tueAvailable" required data-day="tue"><option value="">선택</option><option value="yes">가능</option><option value="no">불가능</option></select></div><div class="time"><label for="tueTime">화요일 가능 시간대</label><input id="tueTime" name="tueTime" maxlength="300" disabled placeholder="예: 오전 10~12시, 오후 7시 이후"></div></div><div class="schedule"><strong>수요일</strong><div><label for="wedAvailable">가능 여부 · 필수</label><select id="wedAvailable" name="wedAvailable" required data-day="wed"><option value="">선택</option><option value="yes">가능</option><option value="no">불가능</option></select></div><div class="time"><label for="wedTime">수요일 가능 시간대</label><input id="wedTime" name="wedTime" maxlength="300" disabled placeholder="예: 오전 10~12시, 오후 7시 이후"></div></div><div class="schedule"><strong>목요일</strong><div><label for="thuAvailable">가능 여부 · 필수</label><select id="thuAvailable" name="thuAvailable" required data-day="thu"><option value="">선택</option><option value="yes">가능</option><option value="no">불가능</option></select></div><div class="time"><label for="thuTime">목요일 가능 시간대</label><input id="thuTime" name="thuTime" maxlength="300" disabled placeholder="예: 오전 10~12시, 오후 7시 이후"></div></div><div class="schedule"><strong>금요일</strong><div><label for="friAvailable">가능 여부 · 필수</label><select id="friAvailable" name="friAvailable" required data-day="fri"><option value="">선택</option><option value="yes">가능</option><option value="no">불가능</option></select></div><div class="time"><label for="friTime">금요일 가능 시간대</label><input id="friTime" name="friTime" maxlength="300" disabled placeholder="예: 오전 10~12시, 오후 7시 이후"></div></div><div class="schedule"><strong>토요일</strong><div><label for="satAvailable">가능 여부 · 필수</label><select id="satAvailable" name="satAvailable" required data-day="sat"><option value="">선택</option><option value="yes">가능</option><option value="no">불가능</option></select></div><div class="time"><label for="satTime">토요일 가능 시간대</label><input id="satTime" name="satTime" maxlength="300" disabled placeholder="예: 오전 10~12시, 오후 7시 이후"></div></div><div class="schedule"><strong>일요일</strong><div><label for="sunAvailable">가능 여부 · 필수</label><select id="sunAvailable" name="sunAvailable" required data-day="sun"><option value="">선택</option><option value="yes">가능</option><option value="no">불가능</option></select></div><div class="time"><label for="sunTime">일요일 가능 시간대</label><input id="sunTime" name="sunTime" maxlength="300" disabled placeholder="예: 오전 10~12시, 오후 7시 이후"></div></div><p class="hint">최소 하루 이상 가능한 시간을 입력해 주세요.</p></section>
+<section><h2><em>06</em>참여 및 사례 활용 동의</h2>
+<div class="consent"><p>본 프로그램은 한국외국어대학교 교육대학원 상담심리전공 「사회성발달및훈련」 수업의 일환입니다. 온라인 부모 면담, 심리검사 및 결과 피드백에 참여하며, 신청 정보는 참여 확인과 일정 조율 및 프로그램 진행에 사용됨을 확인합니다.</p><label class="check"><input type="checkbox" id="participationConsent" name="participationConsent" required><span>프로그램 참여에 동의합니다. (필수)</span></label></div>
+<div class="consent"><p>심리검사 결과 및 컨설팅 내용의 일부가 교육 목적으로 수업 시간에 발표·논의될 수 있습니다. 이름 등 개인을 식별할 수 있는 정보는 제외하고 익명화하여 활용합니다.</p><label class="check"><input type="checkbox" id="caseConsent" name="caseConsent" required><span>익명화된 수업 내 사례 활용에 동의합니다. (필수)</span></label></div>
+</section><button id="submitButton" type="submit">부모 컨설팅 신청하기</button></fieldset><div id="status" role="status" aria-live="polite" tabindex="-1"></div></form><footer>신청 내용을 확인한 후 참여 확정 여부와 진행 방법을 개별 안내드립니다.</footer></main>
+<script>
+'use strict';
+const days = ['mon','tue','wed','thu','fri','sat','sun'];
+const form = document.getElementById('application');
+const fields = document.getElementById('formFields');
+const button = document.getElementById('submitButton');
+const statusBox = document.getElementById('status');
+let requestId = crypto.randomUUID();
+let pending = false;
+let submitted = false;
+function todayKorea() { return new Date().toLocaleDateString('sv-SE', {timeZone:'Asia/Seoul'}); }
+function calculateAge(birth, today = todayKorea()) {
+  if (!/^\d{4}-\d{2}-\d{2}$/.test(birth) || birth > today) return null;
+  const [y,m,d] = birth.split('-').map(Number);
+  const date = new Date(Date.UTC(y,m-1,d));
+  if(date.getUTCFullYear()!==y || date.getUTCMonth()!==m-1 || date.getUTCDate()!==d) return null;
+  const [ty,tm,td] = today.split('-').map(Number);
+  return ty-y-((tm<m || (tm===m && td<d)) ? 1 : 0);
+}
+const birth = form.elements.birthDate;
+birth.max = todayKorea();
+function updateAge() {
+  const age = calculateAge(birth.value);
+  form.elements.age.value = age === null ? '' : age;
+  birth.setCustomValidity(age === null || age<3 || age>18 ? '참여 대상은 만 3~18세입니다. 생년월일을 확인해 주세요.' : '');
+}
+birth.addEventListener('input', updateAge);
+for(const day of days) {
+ const select = form.elements[day+'Available'];
+ const input = form.elements[day+'Time'];
+ select.addEventListener('change', () => {
+   input.disabled = select.value !== 'yes';
+   input.required = select.value === 'yes';
+   for(const d of days) form.elements[d+'Available'].setCustomValidity('');
+ });
+}
+function message(text,kind) { statusBox.textContent=text; statusBox.dataset.kind=kind; statusBox.focus(); }
+form.addEventListener('input', event => { if(event.target !== birth) event.target.setCustomValidity(''); });
+form.addEventListener('submit', async event => {
+ event.preventDefault();
+ if(pending || submitted) return;
+ updateAge();
+ for(const input of form.querySelectorAll('input[type="text"],input[type="tel"],input[type="email"],textarea')) {
+   input.value = input.value.trim();
+   input.setCustomValidity(input.required && !input.disabled && !input.value ? '내용을 입력해 주세요.' : '');
+ }
+ const phone = form.elements.phone;
+ phone.setCustomValidity(/^[+\d\s()-]+$/.test(phone.value) && phone.value.replace(/\D/g,'').length>=9 && phone.value.replace(/\D/g,'').length<=15 ? '' : '연락 가능한 전화번호를 확인해 주세요.');
+ form.elements.monAvailable.setCustomValidity(days.some(d=>form.elements[d+'Available'].value==='yes') ? '' : '최소 하루 이상 상담 가능한 요일을 선택해 주세요.');
+ if(!form.reportValidity()) return;
+ if(!/^https:\/\/script\.google\.com\/macros\/s\/[\w-]+\/exec$/.test(GOOGLE_SCRIPT_ENDPOINT)) {
+   message('아직 신청 접수가 연결되지 않았습니다. 운영자에게 접수 가능 여부를 문의해 주세요.','error'); return;
+ }
+ const payload = Object.fromEntries(new FormData(form));
+ payload.requestId=requestId;
+ payload.participationConsent=form.elements.participationConsent.checked;
+ payload.caseConsent=form.elements.caseConsent.checked;
+ payload.consentVersion='2026-09-14-v1';
+ payload.availability=Object.fromEntries(days.map(d=>[d,{available:form.elements[d+'Available'].value,time:form.elements[d+'Available'].value==='yes'?form.elements[d+'Time'].value.trim():''}]));
+ // 단순 POST 요청으로 전송합니다. no-cors는 저장 결과를 읽을 수 없어 사용하지 않습니다.
+ pending=true; fields.disabled=true; button.textContent='신청서를 보내고 있습니다…';
+ statusBox.textContent='저장 결과를 확인하고 있습니다. 잠시 기다려 주세요.';
+ statusBox.dataset.kind='info';
+ const controller=new AbortController();
+ const timeout=setTimeout(()=>controller.abort(),30000);
+ try {
+   const response=await fetch(GOOGLE_SCRIPT_ENDPOINT,{method:'POST',headers:{'Content-Type':'text/plain;charset=utf-8'},body:JSON.stringify(payload),redirect:'follow',credentials:'omit',signal:controller.signal});
+   if(!response.ok) throw new Error('HTTP');
+   const result=await response.json();
+   if(result.ok!==true || result.requestId!==requestId) {
+     message('신청서가 저장되지 않았습니다. 입력 내용을 확인한 뒤 다시 시도해 주세요. 계속되면 운영자에게 문의해 주세요.','error');
+     return;
+   }
+   submitted=true;
+   message('신청이 완료되었습니다. 신청 내용을 확인한 뒤 개별 연락드리겠습니다.','success');
+   button.textContent='신청 완료';
+ } catch(error) {
+   message('저장 완료 여부를 확인하지 못했습니다. 입력 내용은 유지됩니다. 인터넷 연결을 확인한 뒤 이 화면에서 다시 제출해 주세요. 같은 접수번호로 중복 저장을 방지합니다.','error');
+ } finally {
+   clearTimeout(timeout); pending=false;
+   fields.disabled=submitted;
+   if(!submitted) button.textContent='부모 컨설팅 신청하기';
+ }
+});
+</script></body></html>
